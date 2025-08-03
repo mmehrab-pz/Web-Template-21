@@ -2,7 +2,16 @@
 
 @import "tailwindcss";
 
-@layer base{}
+@layer base{
+    body{
+        background:  rgb(23, 23, 23);
+        
+    }
+}
 @layer components{}
-@layer utilities{}
+@layer utilities{
+    .bt{
+        @apply border border-white
+    }
+}
 @theme{}
