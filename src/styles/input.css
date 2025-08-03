@@ -3,15 +3,50 @@
 @import "tailwindcss";
 
 @layer base{
+    @font-face {
+        font-family: '400';
+        src: url(../fonts/inter/Inter-Regular.ttf);
+    }
+    @font-face {
+        font-family: '500';
+        src: url(../fonts/inter/Inter-Medium.ttf);
+    }
+    @font-face {
+        font-family: '600';
+        src: url(../fonts/inter/Inter-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: '700';
+        src: url(../fonts/inter/Inter-Bold.ttf);
+    }
+    @font-face {
+        font-family: '800';
+        src: url(../fonts/inter/Inter-ExtraBold.ttf);
+    }
+
+
     body{
         background:  rgb(23, 23, 23);
         
+        
+    }
+    .res{
+        @apply w-[92%] lg:w-[1100px] mx-auto
+    }
+    .zRes {
+        @apply relative z-10
     }
 }
-@layer components{}
+@layer components{
+    .btn1{
+        @apply capitalize text-[15px] text-[#ececec] font-[500] border border-[#ffffff61]  py-2 px-[18px] rounded-[20px] bg-[#8a8a8a4d] shadow-[inset_0px_0px_6px_3px_#8a8a8a4d] hover:bg-white hover:text-primary duration-200
+    }
+}
 @layer utilities{
     .bt{
         @apply border border-white
     }
 }
-@theme{}
+@theme{
+    --color-primary: #ff4d00;
+}
