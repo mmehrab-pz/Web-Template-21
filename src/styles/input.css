@@ -24,6 +24,41 @@
         src: url(../fonts/inter/Inter-ExtraBold.ttf);
     }
 
+    @keyframes anime1 {
+        0%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        40%{
+            transform: translateY(-800px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(-800px);
+            opacity: 0;
+        }
+    }
+    @keyframes anime2 {
+        to{
+            transform: translateY(-500px);
+            opacity: 0;
+        }
+    }
+    @keyframes anime3 {
+        0%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        40%{
+            transform: translateY(-600px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(-600px);
+            opacity: 0;
+        }
+    }
+
 
     body{
         background:  rgb(23, 23, 23);
@@ -40,6 +75,13 @@
 @layer components{
     .btn1{
         @apply capitalize text-[15px] text-[#ececec] font-[500] border border-[#ffffff61]  py-2 px-[18px] rounded-[20px] bg-[#8a8a8a4d] shadow-[inset_0px_0px_6px_3px_#8a8a8a4d] hover:bg-white hover:text-primary duration-200
+    }
+    .btn2{
+        @apply capitalize text-[15px] text-black font-[500] py-2 px-[18px] rounded-[20px] bg-white flex opacity-80 duration-300 hover:opacity-100 *:w-[25px] *:h-[25px] *:bg-black *:rounded-full *:ml-2 *:flex *:justify-center *:items-center hover:*:bg-primary *:duration-300
+    }
+
+    .bulet{
+        @apply w-[2px] overflow-hidden absolute z-10 bg-[linear-gradient(180deg,_#fabb00_0%,_#ff4d00_23.13133445945946%,_#00000000_100%)]
     }
 }
 @layer utilities{
