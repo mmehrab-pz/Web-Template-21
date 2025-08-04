@@ -1,4 +1,5 @@
 /* npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch */
+/* https://pourzakaria.com/ */
 /* ------------------------------------------------------ */
 @import "tailwindcss";
 /* ------------------------------------------------------ */
@@ -71,11 +72,27 @@
     }
 
     @keyframes anime4 {
-        0%{
+        0% {
             transform: translateX(0);
         }
-        100%{
+
+        100% {
             transform: translateX(-12%);
+        }
+    }
+
+    @keyframes anime5 {
+        0%{
+            left: 0;
+        }
+        25% {
+            left: calc(100% - 44px);
+        }
+        50%{
+            left: calc(100% - 44px);
+        }
+        75%{
+            left: 0;
         }
     }
 
@@ -100,7 +117,7 @@
     }
 
     .btn2 {
-        @apply capitalize text-[15px] text-black font-[500] py-2 px-[18px] rounded-[20px] bg-white flex opacity-80 duration-300 hover:opacity-100 *:w-[25px] *:h-[25px] *:bg-black *:rounded-full *:ml-2 *:flex *:justify-center *:items-center hover:*:bg-primary *:duration-300
+        @apply capitalize w-fit text-[15px] text-black font-[500] py-2 px-[18px] rounded-[20px] bg-white flex opacity-80 duration-300 hover:opacity-100 *:w-[25px] *:h-[25px] *:bg-black *:rounded-full *:ml-2 *:flex *:justify-center *:items-center hover:*:bg-primary *:duration-300
     }
 
     .bulet {
@@ -116,7 +133,7 @@
     }
 
     .caption {
-        @apply text-[#ececec] text-[16px] font-[400]
+        @apply text-[#a5a5a5] text-[16px] font-[500]
     }
 
 }
