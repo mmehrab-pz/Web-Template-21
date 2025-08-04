@@ -1,98 +1,139 @@
 /* npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch */
-
+/* ------------------------------------------------------ */
 @import "tailwindcss";
+/* ------------------------------------------------------ */
 
-@layer base{
+@layer base {
     @font-face {
         font-family: '400';
         src: url(../fonts/inter/Inter-Regular.ttf);
     }
+
     @font-face {
         font-family: '500';
         src: url(../fonts/inter/Inter-Medium.ttf);
     }
+
     @font-face {
         font-family: '600';
         src: url(../fonts/inter/Inter-SemiBold.ttf);
     }
+
     @font-face {
         font-family: '700';
         src: url(../fonts/inter/Inter-Bold.ttf);
     }
+
     @font-face {
         font-family: '800';
         src: url(../fonts/inter/Inter-ExtraBold.ttf);
     }
 
     @keyframes anime1 {
-        0%{
+        0% {
             transform: translateY(0);
             opacity: 1;
         }
-        40%{
+
+        40% {
             transform: translateY(-800px);
             opacity: 0;
         }
-        100%{
+
+        100% {
             transform: translateY(-800px);
             opacity: 0;
         }
     }
+
     @keyframes anime2 {
-        to{
+        to {
             transform: translateY(-500px);
             opacity: 0;
         }
     }
+
     @keyframes anime3 {
-        0%{
+        0% {
             transform: translateY(0);
             opacity: 1;
         }
-        40%{
+
+        40% {
             transform: translateY(-600px);
             opacity: 0;
+        }
+
+        100% {
+            transform: translateY(-600px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes anime4 {
+        0%{
+            transform: translateX(0);
         }
         100%{
-            transform: translateY(-600px);
-            opacity: 0;
+            transform: translateX(-12%);
         }
     }
 
+    body {
+        background: rgb(23, 23, 23);
 
-    body{
-        background:  rgb(23, 23, 23);
-        
-        
     }
-    .res{
+
+    .res {
         @apply w-[92%] lg:w-[1100px] mx-auto
     }
+
     .zRes {
         @apply relative z-10
     }
 }
-@layer components{
-    .btn1{
-        @apply capitalize text-[15px] text-[#ececec] font-[500] border border-[#ffffff61]  py-2 px-[18px] rounded-[20px] bg-[#8a8a8a4d] shadow-[inset_0px_0px_6px_3px_#8a8a8a4d] hover:bg-white hover:text-primary duration-200
+
+/* ------------------------------------------------------ */
+@layer components {
+    .btn1 {
+        @apply capitalize text-[15px] text-[#ececec] font-[500] border border-[#ffffff61] py-2 px-[18px] rounded-[20px] bg-[#8a8a8a4d] shadow-[inset_0px_0px_6px_3px_#8a8a8a4d] hover:*:bg-white hover:text-primary duration-200
     }
-    .btn2{
+
+    .btn2 {
         @apply capitalize text-[15px] text-black font-[500] py-2 px-[18px] rounded-[20px] bg-white flex opacity-80 duration-300 hover:opacity-100 *:w-[25px] *:h-[25px] *:bg-black *:rounded-full *:ml-2 *:flex *:justify-center *:items-center hover:*:bg-primary *:duration-300
     }
 
-    .bulet{
+    .bulet {
         @apply w-[2px] overflow-hidden absolute z-10 bg-[linear-gradient(180deg,_#fabb00_0%,_#ff4d00_23.13133445945946%,_#00000000_100%)]
     }
 
-    .ball{
+    .ball {
         @apply h-[665px] w-[711px] z-1 overflow-visible absolute opacity-80 bg-[radial-gradient(50%_50%_at_50%_51.4%,_#3e2013_0%,_#00000000_100%)]
     }
+
+    .title {
+        @apply text-white capitalize text-[42px] font-[600]
+    }
+
+    .caption {
+        @apply text-[#ececec] text-[16px] font-[400]
+    }
+
 }
-@layer utilities{
-    .bt{
+
+/* ------------------------------------------------------ */
+
+@layer utilities {
+    .bt {
         @apply border border-white
     }
 }
-@theme{
+
+/* ------------------------------------------------------ */
+
+@theme {
     --color-primary: #ff4d00;
 }
+
+
+/* mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 17.5%, rgb(0, 0, 0) 82.5%, rgba(0, 0, 0, 0) 100%); */
