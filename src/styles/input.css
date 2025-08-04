@@ -83,6 +83,10 @@
     .bulet{
         @apply w-[2px] overflow-hidden absolute z-10 bg-[linear-gradient(180deg,_#fabb00_0%,_#ff4d00_23.13133445945946%,_#00000000_100%)]
     }
+
+    .ball{
+        @apply h-[665px] w-[711px] z-1 overflow-visible absolute opacity-80 bg-[radial-gradient(50%_50%_at_50%_51.4%,_#3e2013_0%,_#00000000_100%)]
+    }
 }
 @layer utilities{
     .bt{
