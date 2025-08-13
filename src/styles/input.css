@@ -129,11 +129,12 @@
     }
 
     .title {
-        @apply text-white capitalize text-[42px] font-[600]
+        @apply text-white capitalize text-[42px] font-[700]
     }
 
     .caption {
         @apply text-[#a5a5a5] text-[16px] font-[500]
+        
     }
 
 }
