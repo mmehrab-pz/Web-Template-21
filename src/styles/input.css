@@ -128,7 +128,7 @@
     }
 
     .title {
-        @apply text-white capitalize text-[30px] lg:text-[42px] font-[700]
+        @apply text-white capitalize text-[30px] md:text-[42px] font-[700]
     }
 
     .caption {
