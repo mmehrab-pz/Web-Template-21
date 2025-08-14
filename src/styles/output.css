@@ -312,6 +312,9 @@
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
+  .my-\[50px\] {
+    margin-block: 50px;
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -332,6 +335,9 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
   }
   .mt-\[35px\] {
     margin-top: 35px;
@@ -695,6 +701,9 @@
   .text-\[36px\] {
     font-size: 36px;
   }
+  .text-\[65px\] {
+    font-size: 65px;
+  }
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
     line-height: calc(var(--spacing) * 10);
@@ -722,6 +731,10 @@
   .leading-\[46px\] {
     --tw-leading: 46px;
     line-height: 46px;
+  }
+  .leading-\[78px\] {
+    --tw-leading: 78px;
+    line-height: 78px;
   }
   .font-\[400\] {
     --tw-font-weight: 400;
@@ -751,6 +764,9 @@
   }
   .text-gray-800 {
     color: var(--color-gray-800);
+  }
+  .text-primary {
+    color: var(--color-primary);
   }
   .text-white {
     color: var(--color-white);
@@ -847,6 +863,11 @@
       grid-column: span 3 / span 3;
     }
   }
+  .md\:my-0 {
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mt-\[160px\] {
     @media (width >= 48rem) {
       margin-top: 160px;
@@ -910,6 +931,11 @@
   .md\:w-\[60\%\] {
     @media (width >= 48rem) {
       width: 60%;
+    }
+  }
+  .md\:w-auto {
+    @media (width >= 48rem) {
+      width: auto;
     }
   }
   .md\:grid-cols-6 {
