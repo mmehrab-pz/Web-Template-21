@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
     --color-white: #fff;
@@ -324,9 +325,6 @@
   .my-\[50px\] {
     margin-block: 50px;
   }
-  .mt-0 {
-    margin-top: calc(var(--spacing) * 0);
-  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -354,9 +352,6 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
-  }
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
   }
@@ -371,6 +366,9 @@
   }
   .mt-\[80px\] {
     margin-top: 80px;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
   }
   .mt-\[120px\] {
     margin-top: 120px;
@@ -447,9 +445,6 @@
   .h-\[1px\] {
     height: 1px;
   }
-  .h-\[10px\] {
-    height: 10px;
-  }
   .h-\[25px\] {
     height: 25px;
   }
@@ -485,6 +480,9 @@
   }
   .h-\[200px\] {
     height: 200px;
+  }
+  .h-\[300px\] {
+    height: 300px;
   }
   .h-\[400\%\] {
     height: 400%;
@@ -582,6 +580,12 @@
   .w-full {
     width: 100%;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .grow {
+    flex-grow: 1;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -595,10 +599,6 @@
   }
   .translate-x-\[-50\%\] {
     --tw-translate-x: -50%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[-\%\] {
-    --tw-translate-y: -%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-\[-2\%\] {
@@ -750,6 +750,9 @@
   .bg-\[\#ffffff\] {
     background-color: #ffffff;
   }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
+  }
   .bg-primary {
     background-color: var(--color-primary);
   }
@@ -777,6 +780,9 @@
   .bg-\[radial-gradient\(50\%_86\%_at_50\%_84\.2\%\,\#d13f0080_0\%\,\#00000000_100\%\)\] {
     background-image: radial-gradient(50% 86% at 50% 84.2%,#d13f0080 0%,#00000000 100%);
   }
+  .bg-\[radial-gradient\(55\.00000000000001\%_112\.99999999999999\%_at_50\%_114\.7\%\,_\#fabb00_0\%\,_\#cc3d00_46\.57534246575342\%\,_\#171717_100\%\)\] {
+    background-image: radial-gradient(55.00000000000001% 112.99999999999999% at 50% 114.7%, #fabb00 0%, #cc3d00 46.57534246575342%, #171717 100%);
+  }
   .bg-\[url\(\'\.\.\/images\/bg-dot\.png\'\)\] {
     background-image: url('../images/bg-dot.png');
   }
@@ -791,9 +797,6 @@
   }
   .\[mask-image\:linear-gradient\(0deg\,_\#00000000_0\%\,_rgba\(0\,0\,0\,1\)_7\.000000000000001\%\,_\#000000_92\%\,_\#00000000_100\%\)\] {
     mask-image: linear-gradient(0deg, #00000000 0%, rgba(0,0,0,1) 7.000000000000001%, #000000 92%, #00000000 100%);
-  }
-  .\[mask-image\:linear-gradient\(0deg\,_\#00000000_0\%\,_rgba\(0\,0\,0\,1\)_7\.000000000000001\%\,_\#000000_92\%\,_\#00000000_100\%\)_add\] {
-    mask-image: linear-gradient(0deg, #00000000 0%, rgba(0,0,0,1) 7.000000000000001%, #000000 92%, #00000000 100%) add;
   }
   .\[mask-image\:linear-gradient\(to_right\,rgba\(0\,0\,0\,0\)_0\%\,rgb\(0\,0\,0\)_17\.5\%\,rgb\(0\,0\,0\)_82\.5\%\,rgba\(0\,0\,0\,0\)_100\%\)\] {
     mask-image: linear-gradient(to right,rgba(0,0,0,0) 0%,rgb(0,0,0) 17.5%,rgb(0,0,0) 82.5%,rgba(0,0,0,0) 100%);
@@ -819,9 +822,6 @@
   .bg-repeat {
     background-repeat: repeat;
   }
-  .mask-add {
-    mask-composite: add;
-  }
   .object-cover {
     object-fit: cover;
   }
@@ -843,6 +843,9 @@
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
   }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -857,6 +860,9 @@
   }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
+  }
+  .pb-\[100px\] {
+    padding-bottom: 100px;
   }
   .pb-\[500px\] {
     padding-bottom: 500px;
@@ -1164,6 +1170,11 @@
   .md\:mt-\[160px\] {
     @media (width >= 48rem) {
       margin-top: 160px;
+    }
+  }
+  .md\:mt-\[180px\] {
+    @media (width >= 48rem) {
+      margin-top: 180px;
     }
   }
   .md\:mt-\[200px\] {
