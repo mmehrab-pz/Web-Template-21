@@ -49,3 +49,7 @@ Feel free to reach out or follow me on social media:
 > 💡 Template inspired by: (https://elementorpress.com/aivio/?storefront=envato-elements#)
 
 ## 🛠️ How to Use
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mmehrab-pz/Web-Template-21
