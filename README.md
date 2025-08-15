@@ -27,7 +27,10 @@ This project was completed under the guidance of my academic supervisor:
 
 ## 📸 Preview
 
-
+<img width="1897" height="1002" alt="Image" src="https://github.com/user-attachments/assets/36ce6136-5091-48cc-a4c3-fede9efe1cfd" />
+<img width="1899" height="1079" alt="Image" src="https://github.com/user-attachments/assets/0f738b2d-bb66-46d8-9e87-5289a3500248" />
+<img width="1900" height="1040" alt="Image" src="https://github.com/user-attachments/assets/0dc1bd8e-947b-4df3-a4fd-7a15d114baa0" />
+<img width="1901" height="1079" alt="Image" src="https://github.com/user-attachments/assets/42c7b7e4-758e-4e05-8abd-b7f648295b23" />
 
 ## 🌐 Live Demo
 
